@@ -5,6 +5,10 @@ public class Circle {
     private int id;
     private String name;
 
+    public Circle() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -15,6 +19,14 @@ public class Circle {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     public void setName(String name) {

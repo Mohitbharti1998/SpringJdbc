@@ -14,6 +14,11 @@ public class SpringJdbc {
 //        Circle circle = doo.getCircle(1);
 //        System.out.println(circle.getName());
 
-        System.out.println(doo.getCircleName(1));
+
+        //Post Circle
+        doo.insetCircle(new Circle(3,"Third Circle"));
+
+        //Get Circle
+        System.out.println(doo.getAllCircle().toString());
     }
 }
